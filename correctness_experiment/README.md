@@ -1,0 +1,1 @@
+This folder allows reproducing the correctness test that verifies correct aggregation is performed by the FPGA by crafting custom packet payloads, and verifying that the result payload holds the sum of the values sent within the custom payloads.
