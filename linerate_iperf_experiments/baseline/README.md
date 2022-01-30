@@ -14,9 +14,11 @@ The current client runs for 310 seconds and the bandwidth is recorded every 10 s
 
 Experiment output files in current folder:
 
-switch_baseline_summary.txt		# Logs the observed bandwidth in every 10 second interval
+switch_baseline.txt			# dump of iperf output every 10 seconds
 
-raw_switch_baseline_summary_gbps.txt 	# Generated data point pairs from the summary log for plotting using tikz in latex
+switch_baseline_summary.txt		# Log of the bandwidth observed every 10 seconds obtained from switch_baseline.txt
+
+raw_switch_baseline_summary_gbps.txt 	# Generated data point pairs for tikx plotting obtained from switch_baseline_summary.txt
 
 
 The resulting output files are then copied into results_summary folder in the RESULTS_FOLDER specified in ../config. 
