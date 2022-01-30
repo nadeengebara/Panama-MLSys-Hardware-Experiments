@@ -1,7 +1,5 @@
 #!/bin/bash
 
-export RESULTS_FOLDER=../results_summary
-
 
 iperf -B $CLIENT_IP -c $SERVER_IP -P 4 -b $TARGET_BW  -t 310 -i 1  > switch_baseline.txt
 
@@ -14,4 +12,4 @@ fi
 python create_raw_file.py switch_baseline_summary.txt
 
 cp switch_baseline_summary.txt $RESULTS_FOLDER
-
+cp raw_switch_baseline_summary_gbps.txt $RESULTS_FOLDER
