@@ -1,8 +1,8 @@
 #!/bin/bash
 
-export REPO_HOME= 
+export REPO_HOME=~/Panama-MLSys-Hardware-Experiments 
 export CLIENT_IP=20.20.20.26
-export SERVER_IP=20.20.20.20
+export SERVER_IP=192.168.1.99
 export TARGET_BW=10G
 export RESULTS_FOLDER=$REPO_HOME/linerate_iperf_experiments/results_summary
 
