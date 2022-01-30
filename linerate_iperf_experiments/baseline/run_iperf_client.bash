@@ -10,6 +10,7 @@ cat switch_baseline.txt | grep SUM | awk ' NR>11 {print $7}' > switch_baseline_s
 if [ ! -d "$RESULTS_FOLDER" ]; then
 	mkdir $RESULTS_FOLDER
 fi
+
 python create_raw_file.py switch_baseline_summary.txt
 
 cp switch_baseline_summary.txt $RESULTS_FOLDER
